@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <title>看直播</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a class="navbar-brand" href="/" id="channeltitle">看直播</a>
+
+    <button 
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a 
+            class="nav-link dropdown-toggle"
+            href="javascript:;"
+            id="navbar-dropdown"
+            role="button"
+            data-toggle="dropdown" >
+            切换信号源
+          </a>
+          <div id="dropdown-menu" class="dropdown-menu"></div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link disabled" id="current-channel-text"></span>
+        </li>
+      </ul>
+
+      <form class="form-inline my-4 my-lg-0">
+        <input id="play-url" class="form-control mr-sm-4" placeholder="直播源地址" />
+        <button id="play-btn" class="btn btn-outline-success my-4 my-sm-0">播放</button>
+      </form>
+
+    </div>
+    
+  </nav>
+
+  <div class="container" style="height: 100vh;">
+    
+    <div class="row" style="height: 2vh;"></div>
+    
+    <div class="row" style="height: 70vh; ">
+      <div id="video" class="col-sm-8 col-xs-8 col-sm-8 offset-sm-2 offset-md-2 offset-lg-2 col-lg-8"></div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="vendor/ckplayer/ckplayer.min.js" type="text/javascript"></script>
+  <script src="vendor/tpl.js" type="text/javascript"></script>
+  
+  <script type="text/html" id="dropdown-item-tpl">
+    [: for (var i = 0; i < list.length; i++) { :]
+    <a class="dropdown-item" data-url="[:=list[i].url:]">[:=list[i].name:]</a>
+    [: } :]
+  </script>
+
+  <script type="text/javascript">
+    $(function () {
+      function play (name, url) {
+        if (url.trim() == '') return
+        console.log('开始播放', name)
+        $('#current-channel-text').text(name)
+        var player = new ckplayer({
+          container: '#video',
+          variable: 'player', // 该属性必需设置，值等于下面的new chplayer()的对象
+          autoplay: true, // 自动播放
+          live: true,
+          video: url
+        })
+      }
+
+      $('#play-btn').click(function () {
+        play('用户自定义信号源', $('#play-url').val())
+      })
+
+      $('.dropdown-menu').on('click', '.dropdown-item', function () {
+        play($(this).text(), $(this).attr('data-url'))
+      })
+
+      $.getJSON('./sources.json')
+        .done(function(sources) {
+          $('#dropdown-menu').html(window.$tpl($('#dropdown-item-tpl').html())({ list: sources }))
+          play(sources[0].name, sources[0].url) 
+        })
+    })
+  </script>
+
+</body>
+
+</html>

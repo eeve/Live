@@ -1,0 +1,123 @@
+[
+    {
+        "name": "5台直播源1",
+        "url": "http://124.224.238.170/PLTV/88888888/224/3221225890/10000100000000060000000000725782_0.smil"
+    },
+    {
+        "name": "5台直播源2",
+        "url": "http://124.224.238.171/PLTV/88888888/224/3221225890/10000100000000060000000000725782_0.smil"
+    },
+    {
+        "name": "5台直播源3",
+        "url": "http://124.224.238.172/PLTV/88888888/224/3221225890/10000100000000060000000000725782_0.smil"
+    },
+    {
+        "name": "5台直播源4",
+        "url": "http://124.224.238.173/PLTV/88888888/224/3221225890/10000100000000060000000000725782_0.smil"
+    },
+    {
+        "name": "5台直播源5",
+        "url": "http://124.224.238.174/PLTV/88888888/224/3221225890/10000100000000060000000000725782_0.smil"
+    },
+    {
+        "name": "5台直播源6",
+        "url": "http://116.199.5.51:8114/LIVES/index.m3u8?Fsv_otype=1&FvSeid=&Pcontent_id=&Provider_id=&Fsv_chan_hls_se_idx=39"
+    },
+    {
+        "name": "5台直播源7",
+        "url": "http://111.48.34.179/wh7f454c46tw920078275_2068891351/huaweicdn.hb.chinamobile.com/PLTV/2510088/224/3221225828/index.m3u8"
+    },
+    {
+        "name": "5台直播源8",
+        "url": "http://111.20.45.157/wh7f454c46tw2459201938_998190740/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225834/index.m3u8"
+    },
+    {
+        "name": "5台直播源9",
+        "url": "http://111.48.34.182/wh7f454c46tw2768875358_33606921/huaweicdn.hb.chinamobile.com/PLTV/2510088/224/3221225828/1.m3u8"
+    },
+    {
+        "name": "5台直播源10",
+        "url": "http://111.48.34.179/wh7f454c46tw1796545278_1328841493/huaweicdn.hb.chinamobile.com/PLTV/2510088/224/3221225828/2.m3u8"
+    },
+    {
+        "name": "5台直播源11",
+        "url": "http://111.48.34.235/wh7f454c46tw3034174782_30136537/huaweicdn.hb.chinamobile.com/PLTV/2510088/224/3221225772/3.m3u8"
+    },
+    {
+        "name": "5台直播源12",
+        "url": "http://111.20.45.160/wh7f454c46tw3072422848_1321119521/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225849/1.m3u8"
+    },
+
+    {
+        "name": "5台直播源13",
+        "url": "http://223.110.245.147/ott.js.chinamobile.com/PLTV/3/224/3221226799/index.m3u8"
+    },
+    {
+        "name": "5台直播源14",
+        "url": "http://hls.mv.wa5.com/live/gssports1/playlist.m3u8"
+    },
+    {
+        "name": "5台直播源15",
+        "url": "http://hls.mv.wa5.com/live/gssports1_900/playlist.m3u8"
+    },
+    {
+        "name": "5台直播源16",
+        "url": "http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226942/index.m3u8"
+    },
+    {
+        "name": "5台直播源17",
+        "url": "http://hnxy.chinashadt.com:1936/live/tv3.stream_aac/playlist.m3u8"
+    },
+    {
+        "name": "5台直播源18",
+        "url": "http://hhab.chinashadt.com:2136/live/di2.stream/playlist.m3u8"
+    },
+    {
+        "name": "5台直播源19",
+        "url": "http://nscreenn-chtmod.cdn.hinet.net/live/FOOTBALL/04.m3u8"
+    },
+    {
+        "name": "5台直播源20",
+        "url": "http://nscreenn-chtmod.cdn.hinet.net/live/ELTA_Sport_plus/04.m3u8"
+    },
+    {
+        "name": "5台直播源21",
+        "url": "http://lcok.net/live/jia.m3u8http://lcok.net/live/jia2.m3u8"
+    },
+    {
+        "name": "5台直播源22",
+        "url": "http://183.207.249.7/PLTV/3/224/3221225604/index.m3u8"
+    },
+    {
+        "name": "5台直播源23",
+        "url": "http://111.20.33.69/PLTV/88888888/224/3221225761/index.m3u8"
+    },
+    {
+        "name": "5台直播源24",
+        "url": "http://183.207.249.15/PLTV/3/224/3221225604/index.m3u8"
+    },
+    {
+        "name": "5台直播源25",
+        "url": "http://223.110.241.204:6610/cntv/live1/hdcctv05plus/hdcctv05plus/index.m3u8"
+    },
+    {
+        "name": "5台直播源26",
+        "url": "http://223.110.241.204:6610/cntv/live1/cctv-5/cctv-5/index.m3u8"
+    },
+    {
+        "name": "5台直播源27",
+        "url": "http://223.110.243.136/PLTV/3/224/3221227166/index.m3u8"
+    },
+    {
+        "name": "5台直播源28",
+        "url": "http://183.207.249.6/PLTV/3/224/3221226324/index.m3u8"
+    },
+    {
+        "name": "5台直播源29",
+        "url": "http://223.110.243.157/PLTV/3/224/3221226324/index.m3u8"
+    },
+    {
+        "name": "风云足球直播源1",
+        "url": "http://223.110.243.168/PLTV/2510088/224/3221227344/1.m3u8"
+    }
+]
