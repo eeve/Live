@@ -8,6 +8,9 @@
 直播源在 [sources.json](./sources.json) 中定义，可自行添加或删除直播源。
 
 
+![](./screenshots/screenshot.png)
+
+
 ## Chrome跨域问题
 
 
